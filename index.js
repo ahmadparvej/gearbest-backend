@@ -5,6 +5,7 @@ const app = express();
 const jwt = require("jsonwebtoken")
 const port = process.env.PORT || 3737
 const authRouter = require("./Routes/auth.routes");
+require("dotenv").config();
 
 app.use(express.json())
 app.use(cors())
